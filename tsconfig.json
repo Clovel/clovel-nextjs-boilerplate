@@ -23,7 +23,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@shadcn/*": ["./src/components/ui/*"],
+      "@/*": ["./src/*"],
     }
   },
   "include": [

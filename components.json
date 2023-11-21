@@ -11,6 +11,6 @@
   },
   "aliases": {
     "components": "@/components",
-    "utils": "@/helpers"
+    "utils": "@/helpers/shcadcnHelpers"
   }
 }
