@@ -1,6 +1,20 @@
+/* Framework imports ----------------------------------- */
+import React from 'react';
+
+/* Module imports -------------------------------------- */
+
+/* Component imports ----------------------------------- */
 import Image from 'next/image'
 
-export default function Home() {
+/* Style imports --------------------------------------- */
+
+/* Type imports ---------------------------------------- */
+
+/* HomePage component prop types ----------------------- */
+interface HomePageProps {}
+
+/* HomePage component ---------------------------------- */
+const HomePage: React.FC<HomePageProps> = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -109,5 +123,8 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
-}
+  );
+};
+
+/* Export HomePage component --------------------------- */
+export default HomePage;
