@@ -6,7 +6,14 @@ import React from 'react';
 /* Component imports ----------------------------------- */
 import Link from 'next/link';
 import { Button } from '@shadcn/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@shadcn/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@shadcn/card';
 import { Icons } from '@/components/icons/icons';
 import { Label } from '@shadcn/label';
 import { Input } from '@shadcn/input';
@@ -60,35 +67,53 @@ const SignUpForm: React.FC<SignUpFormProps> = () => {
             <Label htmlFor="email">
               First name
             </Label>
-            <Input id="email" type="text" placeholder="Clark" />
+            <Input
+              id="email"
+              type="text"
+              placeholder="Clark"
+            />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="email">
               Last name
             </Label>
-            <Input id="email" type="text" placeholder="Kent" />
+            <Input
+              id="email"
+              type="text"
+              placeholder="Kent"
+            />
           </div>
         </div>
         <div className="grid gap-2">
           <Label htmlFor="email">
             Email
           </Label>
-          <Input id="email" type="email" placeholder="clark.kent@dailyplanet.com" />
+          <Input
+            id="email"
+            type="email"
+            placeholder="clark.kent@dailyplanet.com"
+          />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="password">
             Password
           </Label>
-          <Input id="password" type="password" />
+          <Input
+            id="password"
+            type="password"
+          />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="password">
             Confirm password
           </Label>
-          <Input id="password" type="password" />
+          <Input
+            id="password"
+            type="password"
+          />
         </div>
       </CardContent>
-      <CardFooter className='flex flex-col gap-2 items-stretch'>
+      <CardFooter className="flex flex-col gap-2 items-stretch">
         <Button className="w-full">
           Sign up
         </Button>

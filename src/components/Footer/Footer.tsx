@@ -18,7 +18,11 @@ const Footer: React.FC<FooterProps> = () => {
     <footer className="p-4 flex-grow-0 flex-shrink-0">
       Made with ❤️ by
       {' '}
-      <a href="https://github.com/Clovel" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://github.com/Clovel"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Clovel
       </a>
       {' '}

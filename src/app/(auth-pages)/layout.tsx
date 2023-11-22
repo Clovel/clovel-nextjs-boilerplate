@@ -26,7 +26,7 @@ const AuthPagesLayout: React.FC<AuthPagesLayoutProps> = ({ children }) => {
           className="flex items-center justify-center gap-2"
           href="/"
         >
-          <Icons.arrowLeft/>
+          <Icons.arrowLeft />
           Home page
         </Link>
       </nav>

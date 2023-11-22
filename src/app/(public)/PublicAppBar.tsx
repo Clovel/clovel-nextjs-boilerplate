@@ -5,7 +5,7 @@ import React from 'react';
 
 /* Component imports ----------------------------------- */
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
 
 /* Style imports --------------------------------------- */
 
@@ -25,7 +25,8 @@ const PublicAppBar: React.FC<PublicAppBarProps> = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          By{' '}
+          By
+          {' '}
           <Image
             src="/vercel.svg"
             alt="Vercel Logo"
