@@ -21,7 +21,7 @@ const PublicLayout: React.FC<PublicLayoutProps> = ({ children }) => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <PublicAppBar />
-      <div className="flex flex-col items-center justify-center flex-1">
+      <div className="w-full flex flex-col items-center justify-center flex-1">
         {children}
       </div>
       <Footer />
