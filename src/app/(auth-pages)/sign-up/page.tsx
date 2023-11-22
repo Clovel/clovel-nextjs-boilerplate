@@ -1,10 +1,10 @@
 /* Framework imports ----------------------------------- */
 import React from 'react';
-import SignInForm from './SignUpForm';
 
 /* Module imports -------------------------------------- */
 
 /* Component imports ----------------------------------- */
+import SignInForm from './SignUpForm';
 
 /* Style imports --------------------------------------- */
 
@@ -16,7 +16,7 @@ interface SignUpPageProps {}
 /* SignUpPage component -------------------------------- */
 const SignUpPage: React.FC<SignUpPageProps> = () => {
   return (
-    <div>
+    <div className="w-full h-full flex flex-col justify-center items-center">
       <SignInForm />
     </div>
   );
