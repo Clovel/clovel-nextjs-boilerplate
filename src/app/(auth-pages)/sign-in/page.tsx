@@ -1,10 +1,10 @@
 /* Framework imports ----------------------------------- */
 import React from 'react';
-import SignInForm from './SignInForm';
 
 /* Module imports -------------------------------------- */
 
 /* Component imports ----------------------------------- */
+import SignInForm from './SignInForm';
 
 /* Style imports --------------------------------------- */
 
@@ -16,7 +16,7 @@ interface SignInPageProps {}
 /* SignInPage component -------------------------------- */
 const SignInPage: React.FC<SignInPageProps> = () => {
   return (
-    <div>
+    <div className="w-full h-full flex flex-col justify-center items-center">
       <SignInForm />
     </div>
   );

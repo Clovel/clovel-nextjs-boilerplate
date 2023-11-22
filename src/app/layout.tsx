@@ -2,6 +2,7 @@
 import React from 'react';
 
 /* Module imports -------------------------------------- */
+import { clsx } from 'clsx';
 
 /* Component imports ----------------------------------- */
 import ThemeProvider from "@/components/ThemeProvider/ThemeProvider"
@@ -30,8 +31,21 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <head />
-      <body className={inter.className}>
+      <head>
+        <link
+          rel="icon"
+          href="/favicon.ico"
+          sizes="any"
+        />
+      </head>
+      <body
+        className={
+          clsx(
+            inter.className,
+            "w-screen h-screen"
+          )
+        }
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
