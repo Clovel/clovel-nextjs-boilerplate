@@ -1,17 +1,17 @@
-"use client"
+'use client';
 
 /* Framework imports ----------------------------------- */
-import * as React from "react"
+import * as React from 'react';
 
 /* Module imports -------------------------------------- */
 
 /* Component imports ----------------------------------- */
-import { ThemeProvider as NextThemesProvider } from "next-themes"
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 /* Style imports --------------------------------------- */
 
 /* Type imports ---------------------------------------- */
-import type { ThemeProviderProps } from "next-themes/dist/types";
+import type { ThemeProviderProps } from 'next-themes/dist/types';
 
 /* ThemeProvider component ----------------------------- */
 const ThemeProvider: React.FC<ThemeProviderProps> = ({

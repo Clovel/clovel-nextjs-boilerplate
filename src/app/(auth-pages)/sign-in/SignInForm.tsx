@@ -6,7 +6,14 @@ import React from 'react';
 /* Component imports ----------------------------------- */
 import Link from 'next/link';
 import { Button } from '@shadcn/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@shadcn/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@shadcn/card';
 import { Icons } from '@/components/icons/icons';
 import { Label } from '@shadcn/label';
 import { Input } from '@shadcn/input';
@@ -59,13 +66,20 @@ const SignInForm: React.FC<SignInFormProps> = () => {
           <Label htmlFor="email">
             Email
           </Label>
-          <Input id="email" type="email" placeholder="bruce.wayne@wayneenterprises.com" />
+          <Input
+            id="email"
+            type="email"
+            placeholder="bruce.wayne@wayneenterprises.com"
+          />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="password">
             Password
           </Label>
-          <Input id="password" type="password" />
+          <Input
+            id="password"
+            type="password"
+          />
         </div>
         <div>
           <Link href="/forgot-password">
@@ -75,7 +89,7 @@ const SignInForm: React.FC<SignInFormProps> = () => {
           </Link>
         </div>
       </CardContent>
-      <CardFooter className='flex flex-col gap-2 items-stretch'>
+      <CardFooter className="flex flex-col gap-2 items-stretch">
         <Button className="w-full">
           Sign in
         </Button>

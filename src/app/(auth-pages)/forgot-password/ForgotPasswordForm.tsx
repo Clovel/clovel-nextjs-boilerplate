@@ -6,7 +6,14 @@ import React from 'react';
 /* Component imports ----------------------------------- */
 import Link from 'next/link';
 import { Button } from '@shadcn/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@shadcn/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@shadcn/card';
 import { Label } from '@shadcn/label';
 import { Input } from '@shadcn/input';
 
@@ -34,10 +41,14 @@ const ForgotPasswordForm: React.FC<ForgotPasswordFormProps> = () => {
           <Label htmlFor="email">
             Email
           </Label>
-          <Input id="email" type="email" placeholder="pepper.pots@starkindustries.com" />
+          <Input
+            id="email"
+            type="email"
+            placeholder="pepper.pots@starkindustries.com"
+          />
         </div>
       </CardContent>
-      <CardFooter className='flex flex-col gap-2 items-stretch'>
+      <CardFooter className="flex flex-col gap-2 items-stretch">
         <Button className="w-full">
           Send me a reset link
         </Button>

@@ -6,7 +6,14 @@ import React from 'react';
 /* Component imports ----------------------------------- */
 import Link from 'next/link';
 import { Button } from '@shadcn/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@shadcn/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@shadcn/card';
 import { Label } from '@shadcn/label';
 import { Input } from '@shadcn/input';
 
@@ -34,16 +41,22 @@ const ResetPasswordForm: React.FC<ResetPasswordFormProps> = () => {
           <Label htmlFor="password">
             Password
           </Label>
-          <Input id="password" type="password" />
+          <Input
+            id="password"
+            type="password"
+          />
         </div>
         <div className="grid gap-2">
           <Label htmlFor="password">
             Confirm password
           </Label>
-          <Input id="password" type="password" />
+          <Input
+            id="password"
+            type="password"
+          />
         </div>
       </CardContent>
-      <CardFooter className='flex flex-col gap-2 items-stretch'>
+      <CardFooter className="flex flex-col gap-2 items-stretch">
         <Button className="w-full">
           Reset password
         </Button>

@@ -4,7 +4,13 @@ import React from 'react';
 /* Module imports -------------------------------------- */
 
 /* Component imports ----------------------------------- */
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@shadcn/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@shadcn/card';
 import { Icons } from '@/components/icons/icons';
 
 /* Style imports --------------------------------------- */
