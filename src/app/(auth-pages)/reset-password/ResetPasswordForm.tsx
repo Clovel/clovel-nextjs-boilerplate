@@ -4,7 +4,6 @@ import React from 'react';
 /* Module imports -------------------------------------- */
 
 /* Component imports ----------------------------------- */
-import Link from 'next/link';
 import { Button } from '@shadcn/button';
 import {
   Card,

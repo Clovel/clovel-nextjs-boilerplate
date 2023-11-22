@@ -1,7 +1,10 @@
+/* Framework imports ----------------------------------- */
+import React from 'react';
+
 /* Style imports --------------------------------------- */
 import './icons.css';
 
-/* Type imports ---------------------------------------- */
+/* Type declarations ----------------------------------- */
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 /* Icons declarations ---------------------------------- */
@@ -200,8 +203,11 @@ export const Icons = {
       <path d="M21 12a9 9 0 1 1-6.219-8.56" />
     </svg>
   ),
-  fadeLoader: (props: IconProps) => (
-    <span className="fadeLoader" />
+  fadeLoader: (props: React.HTMLAttributes<HTMLSpanElement>) => (
+    <span
+      className="fadeLoader"
+      {...props}
+    />
   ),
   arrowLeft: (props: IconProps) => (
     <svg
@@ -211,6 +217,7 @@ export const Icons = {
       strokeWidth={1.5}
       stroke="currentColor"
       className="w-6 h-6"
+      {...props}
     >
       <path
         strokeLinecap="round"
@@ -227,6 +234,7 @@ export const Icons = {
       strokeWidth={1.5}
       stroke="currentColor"
       className="w-6 h-6"
+      {...props}
     >
       <path
         strokeLinecap="round"

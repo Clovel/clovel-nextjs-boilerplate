@@ -24,12 +24,13 @@ export function Toaster() {
             >
               <div className="grid gap-1">
                 {
-                  title && <ToastTitle>
-                    {title}
-                           </ToastTitle>
+                  Boolean(title) &&
+                    <ToastTitle>
+                      {title}
+                    </ToastTitle>
                 }
                 {
-                  description && (
+                  Boolean(description) && (
                     <ToastDescription>
                       {description}
                     </ToastDescription>
