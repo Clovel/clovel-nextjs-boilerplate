@@ -9,12 +9,13 @@ import ForgotPasswordForm from './ForgotPasswordForm';
 /* Style imports --------------------------------------- */
 
 /* Type imports ---------------------------------------- */
+import type { NextPage } from 'next';
 
 /* ForgotPasswordPage component prop types ------------- */
 interface ForgotPasswordPageProps {}
 
 /* ForgotPasswordPage component ------------------------ */
-const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
+const ForgotPasswordPage: NextPage<ForgotPasswordPageProps> = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
       <ForgotPasswordForm />

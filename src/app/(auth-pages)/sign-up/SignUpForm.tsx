@@ -39,15 +39,24 @@ const SignUpForm: React.FC<SignUpFormProps> = () => {
       </CardHeader>
       <CardContent className="grid gap-4">
         <div className="grid grid-cols-3 gap-2">
-          <Button variant="outline">
+          <Button
+            variant="outline"
+            disabled
+          >
             <Icons.gitHub className="mr-2 h-4 w-4" />
             Github
           </Button>
-          <Button variant="outline">
+          <Button
+            variant="outline"
+            disabled
+          >
             <Icons.google className="mr-2 h-4 w-4" />
             Google
           </Button>
-          <Button variant="outline">
+          <Button
+            variant="outline"
+            disabled
+          >
             <Icons.apple className="mr-2 h-4 w-4" />
             Apple
           </Button>

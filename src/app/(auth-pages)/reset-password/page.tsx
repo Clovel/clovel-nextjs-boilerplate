@@ -9,12 +9,13 @@ import ResetPasswordForm from './ResetPasswordForm';
 /* Style imports --------------------------------------- */
 
 /* Type imports ---------------------------------------- */
+import type { NextPage } from 'next';
 
 /* ResetPasswordPage component prop types -------------- */
 interface ResetPasswordPageProps {}
 
 /* ResetPasswordPage component ------------------------- */
-const ResetPasswordPage: React.FC<ResetPasswordPageProps> = () => {
+const ResetPasswordPage: NextPage<ResetPasswordPageProps> = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
       <ResetPasswordForm />
